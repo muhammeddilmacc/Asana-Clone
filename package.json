@@ -4,12 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon v1/src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "http-status": "^1.5.3",
+    "mongoose": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammeddilmacc/Asana-Clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhammeddilmacc/Asana-Clone/issues"
+  },
+  "homepage": "https://github.com/muhammeddilmacc/Asana-Clone#readme"
 }
