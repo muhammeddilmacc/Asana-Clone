@@ -6,7 +6,7 @@ const { ProjectRoutes } = require('./api-routes');
 
 // order is important
 config(); // load config
-loaders(); // load loaders
+loaders(); // load loaders; db, logger, etc
 
 const app = express();
 
@@ -22,5 +22,5 @@ app.use(helmet());// security
 
 app.listen(process.env.APP_PORT, () => {
     console.log('Server is running on port 3000');
-    app.use('/projects', ProjectRoutes.router);
+    app.use('/projects', ProjectRoutes);
 });
